@@ -16,7 +16,7 @@
 @property (nonatomic, strong) AVCaptureDeviceInput *deviceInput;
 @property (nonatomic, assign, readwrite) BOOL capturing;
 
-- (void)_BLCaptureView_commonInit;
+- (void)_MPCaptureView_commonInit;
 
 @end
 
@@ -30,7 +30,7 @@
         return nil;
     }
     
-    [self _BLCaptureView_commonInit];
+    [self _MPCaptureView_commonInit];
     
     return self;
 }
@@ -42,12 +42,12 @@
         return nil;
     }
     
-    [self _BLCaptureView_commonInit];
+    [self _MPCaptureView_commonInit];
     
     return self;
 }
 
-- (void)_BLCaptureView_commonInit;
+- (void)_MPCaptureView_commonInit;
 {
     _captureSession = [[AVCaptureSession alloc] init];
     
